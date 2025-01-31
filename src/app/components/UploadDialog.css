@@ -1,0 +1,137 @@
+.Button {
+  padding: 8px 16px;
+  background-color: #007aff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.Button:hover {
+  background-color: #005bb5;
+}
+
+.DialogOverlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+}
+
+.DialogContent {
+  z-index: 9999; /* Higher than the overlay */
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 10px 38px -10px rgba(0, 0, 0, 0.35),
+    0px 10px 20px -15px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 25px;
+  width: 90vw;
+  max-width: 500px;
+}
+
+.DialogTitle {
+  margin: 0;
+  font-weight: 600;
+  font-size: 18px;
+  color: #000;
+}
+
+.DialogDescription {
+  margin: 10px 0 20px;
+  font-size: 15px;
+  color: #666;
+}
+
+.UploadContainer {
+  margin-bottom: 20px;
+}
+
+.UploadBox {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.UploadInput {
+  margin-top: 10px;
+}
+
+.OptionsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.OptionButton {
+  background: #f3f3f3;
+  border: none;
+  padding: 10px;
+  flex: 1;
+  margin: 0 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.OptionButton:hover {
+  background: #e0e0e0;
+}
+
+.IconButton {
+  all: unset;
+  font-family: inherit;
+  border-radius: 100%;
+  height: 25px;
+  width: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.CloseButton:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.ProgressBarContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.ProgressLabel {
+  margin-right: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.ProgressRoot {
+  position: relative;
+  background: #e0e0e0;
+  border-radius: 5px;
+  height: 10px;
+  flex-grow: 1;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.ProgressIndicator {
+  background: #007aff;
+  height: 100%;
+  border-radius: 5px 0 0 5px;
+  transition: width 0.3s ease;
+}
+
+.ProgressCount {
+  font-size: 14px;
+  color: #666;
+}

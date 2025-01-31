@@ -1,0 +1,46 @@
+.App {
+  /* Remove default margin for a cleaner layout, allowing full control over page spacing.
+     Resetting the margin is a common practice to remove inconsistencies across different browsers, making it easier to create a consistent layout. */
+  margin: 0;
+
+  background-color: var(--v3-share-form-border-color);
+  color: var(--v3-notebook-guide-text-color);
+
+  padding: 4rem 2rem;
+
+  /* Use flexbox to align content centrally, both horizontally and vertically.
+        Flexbox provides a simple way to align elements, helping create a clean and balanced design with minimal code. */
+  display: flex;
+  gap: 1rem;
+
+  /* Set minimum width to ensure proper display on smaller devices, preventing layout issues.
+        Setting a minimum width helps prevent elements from becoming too compressed, ensuring usability on small screens. */
+  min-width: 320px;
+
+  /* Set minimum height to cover the full viewport, ensuring content always fills the screen.
+        This helps to maintain a consistent appearance regardless of the amount of content, providing a full-screen experience. */
+  height: 100vh;
+  & > *:first-child,
+  & > *:last-child {
+    flex: 0 0 calc((30% - (1rem / 2))); /* 30% minus half the gap for each side */
+  }
+
+  & > *:nth-child(2) {
+    flex: 0 0 calc((40% - (1rem / 2))); /* 40% minus half the gap for each side */
+  }
+}
+
+.chat .chat-ui-kit {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.chat .chat-ui-kit .message-list-container {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.chat .chat-ui-kit .message-input-container {
+  flex-shrink: 0;
+}

@@ -1,0 +1,88 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.sidebar-header {
+  border-radius: 1rem 1rem 0 0;
+  padding: 1rem;
+  background-color: var(--v3-share-dialog-icon-background);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar-body {
+  border-radius: 0 0 1rem 1rem;
+  padding: 1rem;
+  background-color: var(--v3-share-dialog-icon-background);
+  height: 100%;
+}
+
+.source-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.scroll-area {
+  flex: 1;
+  overflow: hidden;
+}
+
+.viewport {
+  padding: 1rem 0;
+}
+
+.source-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  justify-content: space-between;
+}
+
+.checkbox-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkbox-root {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.checkbox-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: green;
+}
+
+.source-label {
+  cursor: pointer;
+}
+
+.scrollbar {
+  width: 10px;
+}
+
+.thumb {
+  border-radius: 5px;
+}
+
+.upload-button {
+  all: unset;
+  border: 1px solid var(--v3-share-form-border-color);
+  border-radius: 1rem;
+  padding: 0.3rem;
+  text-align: center;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--v3-share-form-border-color);
+  }
+}

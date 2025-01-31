@@ -1,0 +1,23 @@
+#root {
+  width: 100%;
+}
+
+:root {
+  /* Set base font-family, with fallbacks to common system fonts to ensure consistent typography across different platforms.
+     The use of multiple fonts provides robustness: if a user lacks one font, the system will pick the next available one, ensuring a good experience. */
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  /* Set text color to a slightly transparent white to make the text readable without being too harsh on dark backgrounds.
+     Using slightly transparent colors helps soften the contrast, reducing eye strain, especially in dark mode. */
+  color: rgba(255, 255, 255, 0.87);
+
+  /* Set background color to a dark gray to provide a neutral base that is easy on the eyes.
+     A neutral dark background reduces contrast with the text, making it more comfortable for users to read in dark mode. */
+  background-color: #242424;
+}
+
+body {
+  /* Remove default margin for a cleaner layout, allowing full control over page spacing.
+     Resetting the margin is a common practice to remove inconsistencies across different browsers, making it easier to create a consistent layout. */
+  margin: 0;
+}

@@ -1,0 +1,43 @@
+.reader {
+  display: flex;
+  flex-direction: column;
+  width: 80ch;
+  gap: 1px;
+}
+
+.reader-header {
+  border-radius: 1rem 1rem 0 0;
+  padding: 1rem;
+  background-color: var(--v3-share-dialog-icon-background);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reader-body {
+  border-radius: 0 0 1rem 1rem;
+  padding: 1rem;
+  background-color: var(--v3-share-dialog-icon-background);
+  height: 100%;
+  word-wrap: break-word; /* Allows long words to break and wrap */
+  word-break: break-word; /* Ensures long words break properly */
+  overflow-wrap: break-word; /* Modern alternative for word-wrap */
+  overflow-x: hidden; /* Hides overflowing text */
+  & pre {
+    white-space: pre-wrap; /* Allows wrapping of text while preserving whitespace */
+    word-wrap: break-word; /* Break long words to wrap */
+    overflow-wrap: break-word; /* Ensures compatibility for modern browsers */
+  }
+}
+
+.chunk {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.chunk.highlight {
+  color: var(--v3-share-dialog-icon-background);
+  background-color: #fffbcc;
+}

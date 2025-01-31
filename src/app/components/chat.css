@@ -1,0 +1,91 @@
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  color: var(--v3-notebook-guide-text-color) !important;
+  /* Reset margin and padding for list items */
+  li,
+  ol,
+  ul {
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    list-style-position: inside;
+  }
+
+  /* Ensure list item content aligns correctly */
+  li p {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.chat-header {
+  border-radius: 1rem 1rem 0 0;
+  padding: 1rem;
+  background-color: var(--v3-share-dialog-icon-background);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cs-main-container {
+  background-color: var(--v3-share-dialog-icon-background);
+  border: unset;
+  padding: 1rem 0.5rem;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.cs-chat-container {
+  background-color: var(--v3-share-dialog-icon-background);
+}
+
+.cs-message-list {
+  background-color: var(--v3-share-dialog-icon-background);
+}
+
+.cs-message-input {
+  background-color: var(--v3-share-dialog-icon-background) !important;
+  border: unset !important;
+}
+
+.cs-message-input__content-editor-wrapper {
+  background-color: var(--v3-share-dialog-icon-background) !important;
+  border: 1px solid var(--v3-share-form-border-color);
+}
+
+.cs-message-input__content-editor {
+  color: var(--v3-notebook-guide-text-color) !important;
+  background-color: var(--v3-share-dialog-icon-background) !important;
+  &:empty::before {
+    color: var(--v3-notebook-guide-text-color) !important;
+  }
+}
+
+.cs-message--incoming .cs-message__content {
+  color: var(--v3-notebook-guide-text-color) !important;
+  background-color: unset;
+}
+
+.citationRef {
+  all: unset;
+  font-size: 0.8rem;
+  width: 1.3rem;
+  height: 1.3rem;
+  text-align: center;
+  display: inline-block;
+  font-weight: 600;
+  border: 0;
+  border-radius: 50%;
+  margin-inline-start: 4px;
+  cursor: pointer;
+  background-color: var(--v3-inline-citation-background-color);
+  color: var(--v3-inline-citation-color);
+  transition: opacity 0.2s linear;
+  opacity: 1;
+  user-select: none;
+  &:hover {
+    opacity: 0.5;
+  }
+}
