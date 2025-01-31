@@ -1,8 +1,19 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Project Overview
+
+This project is a Retrieval-Augmented Generation (RAG) application that allows users to upload multiple PDF files as sources. Users can select the sources they want to retrieve answers from, providing a customized and dynamic knowledge retrieval experience. The chat interface was built using the [`chatscope`](https://github.com/chatscope) library, offering a seamless and interactive user experience.
+
+In the background, this application utilizes the OpenAI API for generating responses. Additionally, the [`LangChain.js`](https://github.com/hwchase17/langchainjs) library was used to construct the underlying logic, enabling more advanced language processing and retrieval capabilities. Redis is used to implement the queue that processes multiple files in the backend, ensuring efficient handling of uploaded documents. ChatGPT responses are parsed using the [`react-markdown`](https://github.com/remarkjs/react-markdown) library to render formatted text correctly in the chat interface.
+
 ## Getting Started
 
-First, run the development server:
+First, ensure that you have the necessary environment variables set up:
+
+- Define `NOTEBOOKLM_OPENAI_API_KEY` in your environment.
+- Ensure you have a Redis instance running and listening on port `6379`.
+
+Then, run the development server:
 
 ```bash
 npm run dev
